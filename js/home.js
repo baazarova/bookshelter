@@ -10,6 +10,10 @@ let options = {
   method: "GET",
 };
 
+if(!localStorage.length){
+    window.location.replace("./login.html")
+}
+
 logOut.addEventListener("click", (e) => {
   e.preventDefault();
   async function logOut() {
