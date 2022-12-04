@@ -4,7 +4,6 @@ let password = document.querySelector(".password-input");
 
 let url = "https://reqres.in/api/login";
 let errorUI = document.createElement("h1");
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   errorUI.textContent = null;
@@ -30,6 +29,7 @@ form.addEventListener("submit", (e) => {
       errorUI.classList = "error-ui";
       errorUI.textContent = "User Not Found! Please try again";
       form.append(errorUI);
+      
     }
   }
   loginFunc();
