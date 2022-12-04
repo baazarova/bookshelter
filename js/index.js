@@ -14,7 +14,7 @@ form.addEventListener("submit", (e) => {
       "Content-type": "application/json",
     },
     body: JSON.stringify({
-      email: login.value,
+      email: "EVE.HOLT@REQRES.IN",
       password: password.value,
     }),
   };
